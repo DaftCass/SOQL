@@ -1,0 +1,2 @@
+SELECT id, name, phone, webSite FROM Account WHERE name IN ('Silva", 'Marques') AND (webSite like 'https://%' OR website like '%.com.uk')
+

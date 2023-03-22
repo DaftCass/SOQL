@@ -1,0 +1,84 @@
+//create a map
+
+Map<String, List<String>> contryToCity = new Map<String, List<String>> {
+	'Brasil' => new List<String> {
+		'São Paulo', 'Curitiba', 'Brasilia'
+	},
+	
+	'Canada' => new List<Striing> {
+		'Toronto'
+	},
+	'Italia' => new List<String>()
+
+} 
+
+System.debug(contryToCity);
+
+//create a new value in the map
+
+contryToCity.put(
+	'Portugal', new List<String>{
+		'Lisboa', 'Bragança'
+	}
+)
+
+
+System.debug(contryToCity);
+
+//get a list value of the key of map
+
+List<String> portugalCitys = contryToCity.get('Portugal');
+
+
+System.debug(portugalCitys);
+
+
+
+//add values to existent data in the map
+
+countryToCity.get('Italia').add('Roma', 'Veneza');
+
+System.debug(contryToCity.get('Italia'));
+
+
+
+//safe add
+
+if (countryToCity.countainsKey('Espanha') && countryToCIty.get('Espanha') != null{
+
+	countryToCity.get('Espanha').add('Barcelona');
+
+}
+
+else {
+
+	countryToCity.put('Espanha' => new List<String>{
+		'Barcelona'
+	})
+}
+
+System.debug(countryToCity.get('Espanha');
+
+
+
+//use 'Set' to take the Keys of a map
+
+Set<Strint> mapKeys = countryToCity.keySet();
+
+System.debug(mapKeys);
+
+
+
+//Use 'List' to get the values of a list in a map
+
+List<List<String>> listMAp = countryToCity.values();
+
+System.debug(listMap);
+
+
+// get the size of a map
+
+Integer mapSize = countryToCity.size();
+
+
+System.debug(mapSize);

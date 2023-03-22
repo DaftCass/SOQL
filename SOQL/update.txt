@@ -1,0 +1,17 @@
+List<Evento> status = new List<Evento>[
+	SELECT status__c
+	FROM Evento 
+	WHERE Evento__r.ativo__c = false
+
+]
+
+
+for(Evento__c evento : status){
+
+evento.status__c = 'Cancelado';
+
+status.add(evento);
+
+}
+
+update status;

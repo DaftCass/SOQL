@@ -1,0 +1,17 @@
+List<Account> accountList = [
+
+	SELECT Id, Name FROM Account
+
+]
+
+Localidade__c local = new Localidade__c(
+
+Name = 'Pragma School',
+Descricao__c = '',
+Ativo__c = false
+
+);
+
+insert local
+
+System.debug(local)

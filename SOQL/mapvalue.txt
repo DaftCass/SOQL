@@ -1,0 +1,28 @@
+Map<String, String> interando = new Map<String, String> {
+
+	'DF' => 'Distrito Federal',
+	'ES' => ' Espirito Santo'
+
+}
+
+
+// Keylist
+
+for (String key : interando.keySet()){
+	System.debug(key);
+	String mapValue = interando.get(key);
+
+	System.debug(mapValue);
+
+
+}
+
+// values
+
+
+
+for (String values : interando.values()){
+
+System.debug(values);
+
+}

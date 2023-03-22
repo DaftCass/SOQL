@@ -1,0 +1,10 @@
+public static void changeOldLocation(Location__c location, String newLocation) {
+
+if (newLocation != null)
+
+	location = newLocation;
+	newLocation = null;
+
+}
+
+upsert Location__c;

@@ -1,0 +1,14 @@
+Date limitDate = Date.newInstance(2022, 05, 01);
+System.debug(limitDate);
+
+
+    List<Event> returnListOfEvents = new List<Event>([
+	Select id, CurrencyIsoCode, CreatedDate 
+	FROM Event 
+	WHERE CreatedDate >: limitDate AND  Order By CreatedDate Asc]);
+
+For(Event event: returnListOfEvents){
+    Datetime teste;
+    teste = event.CreatedDate;
+    System.debug(teste);
+}

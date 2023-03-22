@@ -1,0 +1,11 @@
+public static List<Evento__c> deleteEvents [
+
+	SELECT status__c
+	FROM Evento__c
+	WHERE status = 'Cancelado'
+
+
+]
+
+
+DELETE deleteEvents;

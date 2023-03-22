@@ -1,0 +1,7 @@
+varList<Contact> contaSalva = [
+	
+	SELECT id, name, birthDate 
+	FROM Contact
+];
+
+System.debug(contaSalva);

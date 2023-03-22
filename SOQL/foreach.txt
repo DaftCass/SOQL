@@ -1,0 +1,13 @@
+List<Account> acountList = [
+	SELECT Id, Name
+	FROM Account
+	WHERE Type = 'Prospect'
+];
+
+System.deug(accountList);
+
+//foreach não necessita de contador, o proprio conta pela quantidade de valores em uma coleção
+
+for (Account account : accountList){
+	System.debug(account);
+}

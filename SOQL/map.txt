@@ -1,0 +1,23 @@
+Map<String, String> stateAbreviationMap = new Map<String, String> {
+
+	'DF' => 'Destrito Federal',
+	'ES' => 'Espirito Santo'
+};
+
+System.debug(stateAbreviationMap);
+
+
+
+Map<String, List<String>> ContryToCity = new Map<String, List<String>> {
+	'Brasil' => new List<String> {
+		'São Paulo', 'Curitiba', 'Brasilia'
+	},
+	
+	'Canada' => new List<Striing> {
+		'Toronto'
+	},
+	'Italia' => new List<String>()
+
+} 
+
+System.debug(ContryToCity)

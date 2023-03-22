@@ -1,0 +1,12 @@
+List<Account> acountList = [
+	SELECT Id, Name
+	FROM Account
+	WHERE Type = 'Prospect'
+];
+
+System.deug(accountList);
+
+for (Integer count = 0; count < accountList.size(); count++){
+	Account account = accountList.get(count);
+	System.debug(account);
+}

@@ -1,0 +1,34 @@
+List<Evento__c> adiamento = new List<Evento__c> [
+
+	SELECT id, name, tipo__c data__c, status__c
+	FROM Evento__c
+	WHERE Evento__r.status__c == 'Adiado' 
+
+]
+
+for (Evento__c evento : adiamento) {
+
+	if (adiamento.tipo__c == 'Comercial' && adiamento.data__C < data.today()){
+		List<Evento__c> novoEvento = new List<Evento>[
+			name = adiamento.name;
+			tipo = adiamento.tipo__c;
+			status = adiamento.status__c;
+			data = data.today();
+
+		]
+
+		insert novoEvento;
+	}
+
+	elseif (adiamento.tipo__c != 'Comercial' && adiamento.data__c < data.today())
+
+		adiamento.data__c = data.today();
+
+		update adiamento;
+	}
+	
+	else	{
+
+		System.debug('Tudo atualizado');
+	}
+}

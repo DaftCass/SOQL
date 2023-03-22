@@ -1,0 +1,7 @@
+SELECT id, name, webSite, phone, email__c FROM Account
+
+SELECT id, name tipo__c, descricao__c FROM Evento__c
+
+SELECT id, name birthDate, Account.id, Account.name, Account.webSite, Account.phone FROM Contact
+
+SELECT id, name, tipo__c, Localidade__r.name, Localidade__r.endereco__c, Conta__r.name FROM Evento__c
